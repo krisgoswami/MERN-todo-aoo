@@ -1,10 +1,8 @@
 import mongoose from "mongoose";
 
 const todoSchema = new mongoose.Schema({
-    todo: {
-        type: String,
-        required: true,
-    }
+    todo: String,
+    completed: Boolean,
 })
 
 export const Todo = mongoose.model("Todo", todoSchema);

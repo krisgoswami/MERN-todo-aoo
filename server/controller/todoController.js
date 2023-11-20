@@ -11,9 +11,9 @@ export const getTodo = async (req, res) => {
 
 export const createTodo = async (req, res) => {
     try {
-        const { todo } = req.body;
+        const { todo, completed } = req.body;
 
-        const newTodo = new Todo({ todo: todo });
+        const newTodo = new Todo({ todo: todo, completed: completed });
         await newTodo.save();
         res.status(200).send({
             message: 'todo added',
