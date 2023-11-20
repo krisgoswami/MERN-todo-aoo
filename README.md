@@ -1,5 +1,7 @@
 # MERN-todo-app
 
+A todo application built using the MERN stack (MongoDB, Express, React, Node.js) with Tailwind CSS.
+
 ![image](https://github.com/krisgoswami/MERN-todo-app/assets/91143716/d3bc8e8c-4ae6-44a2-bd39-f61c0e54f6d8)
 
 
