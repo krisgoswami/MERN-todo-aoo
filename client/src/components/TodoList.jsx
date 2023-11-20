@@ -87,7 +87,7 @@ const TodoList = () => {
                 {todos.map((todo) => (
                     <li
                         key={todo._id}
-                        className={`flex items-center justify-between border p-2 mb-2 ${todo.completed ? 'line-through text-gray-500' : ''
+                        className={`bg-white rounded-lg flex items-center justify-between border p-2 mb-2 ${todo.completed ? 'line-through text-gray-500 animate-strike' : ''
                             }`}
                     >
                         <input

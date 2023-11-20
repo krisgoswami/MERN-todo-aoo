@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Poppins:wght@300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  @apply font-poppins;
+}
+
+@keyframes strike {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.animate-strike {
+  display: inline-block;
+  overflow: hidden;
+  transform-origin: 0 100%;
+  animation: strike 0.5s ease-in-out;
+}
