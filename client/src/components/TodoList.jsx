@@ -71,10 +71,12 @@ const TodoList = () => {
 
     return (
         <div className="max-w-md mx-auto mt-8 p-4 bg-gray-100 rounded shadow">
+            <h1 className='font-bold text-3xl text-center mb-5'>Todo List</h1>
             <input
                 type="text"
                 value={newTodo}
                 onChange={(e) => setNewTodo(e.target.value)}
+                placeholder='Add a task...'
                 className="border border-gray-300 p-2 w-full mb-4"
             />
             <button
@@ -87,7 +89,7 @@ const TodoList = () => {
                 {todos.map((todo) => (
                     <li
                         key={todo._id}
-                        className={`bg-white rounded-lg flex items-center justify-between border p-2 mb-2 ${todo.completed ? 'line-through text-gray-500 animate-strike' : ''
+                        className={`bg-white rounded-lg flex items-center justify-between border p-2 mb-2 ${todo.completed ? 'line-through text-gray-500 bg-gray-200' : ''
                             }`}
                     >
                         <input
